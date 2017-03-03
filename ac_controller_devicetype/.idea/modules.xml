@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ac_controller.iml" filepath="$PROJECT_DIR$/ac_controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/ac_controller-component.iml" filepath="$PROJECT_DIR$/component/ac_controller-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/ac_controller-feature.iml" filepath="$PROJECT_DIR$/feature/ac_controller-feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/analytics/org.smartbuilding.ac_controller.analytics.iml" filepath="$PROJECT_DIR$/component/analytics/org.smartbuilding.ac_controller.analytics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/api/org.smartbuilding.ac_controller.api.iml" filepath="$PROJECT_DIR$/component/api/org.smartbuilding.ac_controller.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature/feature/org.smartbuilding.ac_controller.feature.iml" filepath="$PROJECT_DIR$/feature/feature/org.smartbuilding.ac_controller.feature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/plugin/org.smartbuilding.ac_controller.plugin.iml" filepath="$PROJECT_DIR$/component/plugin/org.smartbuilding.ac_controller.plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/component/ui/org.smartbuilding.ac_controller.ui.iml" filepath="$PROJECT_DIR$/component/ui/org.smartbuilding.ac_controller.ui.iml" />
+    </modules>
+  </component>
+</project>

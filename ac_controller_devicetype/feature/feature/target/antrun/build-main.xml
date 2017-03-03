@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <property name="db.dir" value="target/maven-shared-archive-resources/database"/>
+  <property name="userid" value="wso2carbon"/>
+  <property name="password" value="wso2carbon"/>
+  <property name="dbURL" value="jdbc:h2:file:/home/rosen/IoT/ga/wso2iot-3.0.0 (2)/samples/ac_controller/feature/feature/${db.dir}/ac_controllerDM_DB;DB_CLOSE_ON_EXIT=FALSE"/>
+  <mkdir dir="/home/rosen/IoT/ga/wso2iot-3.0.0 (2)/samples/ac_controller/feature/feature/${db.dir}"/>
+  <sql onerror="continue" userid="${userid}" driver="org.h2.Driver" autocommit="true" password="${password}" url="${dbURL}">
+    <classpath refid="maven.dependency.classpath"/>
+    <classpath refid="maven.compile.classpath"/>
+    <classpath refid="maven.runtime.classpath"/>
+    <fileset file="/home/rosen/IoT/ga/wso2iot-3.0.0 (2)/samples/ac_controller/feature/feature/src/main/resources/dbscripts/h2.sql"/>
+  </sql>
+</target>
+</project>

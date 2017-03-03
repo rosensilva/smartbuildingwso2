@@ -1,0 +1,11 @@
+
+{
+  "deviceType": {
+    "label": "ac_controller",
+    "category": "virtual",
+    "downloadAgentUri": "ac_controller/device/download",
+    "scopes" : [
+      "perm:ac_controller:enroll"
+    ]
+  }
+}
