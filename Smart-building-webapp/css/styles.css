@@ -1,0 +1,375 @@
+/**
+* Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+*
+* WSO2 Inc. licenses this file to you under the Apache License,
+* Version 2.0 (the "License"); you may not use this file except
+* in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied. See the License for the
+* specific language governing permissions and limitations
+* under the License.
+**/
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+input[type=range] {
+    /*removes default webkit styles*/
+    -webkit-appearance: none;
+    /*fix for FF unable to apply focus style bug */
+    border: 1px solid white;
+    /*required for proper track sizing in FF*/
+    width: 300px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #64bd63;
+    margin-top: -4px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+
+input[type=range]::-moz-range-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #64bd63;
+}
+
+
+/*hide the outline behind the border*/
+
+input[type=range]:-moz-focusring {
+    outline: 1px solid white;
+    outline-offset: -1px;
+}
+
+input[type=range]::-ms-track {
+    width: 300px;
+    height: 5px;
+    /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+    background: transparent;
+    /*leave room for the larger thumb to overflow with a transparent border */
+    border-color: transparent;
+    border-width: 6px 0;
+    /*remove default tick marks*/
+    color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #777;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #ddd;
+    border-radius: 10px;
+}
+
+input[type=range]::-ms-thumb {
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #64bd63;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #888;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #ccc;
+}
+
+.bg{
+    /* The image used */
+    background-image: url("../img/background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+p{
+
+    color : black;
+    font-size: 16px;
+    padding : 0% 0% 0% 15px ;
+}
+
+.smartButton{
+    padding :0px 0px 0px 40px ;
+}
+
+.container {
+    background-color:white;
+    height:auto;
+    width: 50%  ;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+    box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+            
+}
+
+.container_2 {
+    background-color: #5c6c76;
+    height:auto;
+    width: 18%  ;
+    align: left ;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+
+    -webkit-box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+    box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+}
+
+.container_3 {
+    background-color: rgba(0, 0, 0, 0.33);
+    height:35%;
+    width: 45%  ;
+    float:left;
+    /*padding: 2%;*/
+    margin-left: 3%;
+
+    color: #ffffff;
+    font-size: 18px;
+
+    margin-right: 2%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+    box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+}
+
+.container_4 {
+    background-color: rgba(0, 0, 0, 0.33);
+    height:35%;
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 3%;
+    /*padding: 2em;*/
+    float: right;
+    color: #ffffff;
+    font-size: 18px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+    box-shadow:  0px 0px 10px 3px rgba(00, 00, 00, 0.8);
+
+}
+
+.logo {
+    font-size:36px;
+    color: #000000;
+    font-family:'Arial';
+    text-transform:uppercase;
+    font-weight:bold;
+    margin:20px;
+    float:left;
+    padding: 10px
+}
+
+.operations-main {
+    margin:20px;
+    float:left;
+}
+
+#order-window {
+    margin:10px;
+    padding:10px;
+    box-shadow:0px 0px 5px #CCC;
+    float:left;
+    width:96%;
+}
+.order-number {
+    font-weight:bold;
+    float:left;
+    margin-right:20px;
+}
+
+.order-content {
+    float:left;
+    font-size:16px;
+    font-weight:bold;
+    color:#666;
+}
+
+.notice {
+    padding:20px;
+}
+
+.help-block {
+    font-size:12px;
+    font-style:italic;
+    font-weight:normal;
+}
+
+.amount {
+    float:right;
+    font-size:22px;
+    margin-right:20px;
+    margin-top:5px;
+}
+
+.order-entry {
+    margin-bottom:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #efefef;
+    width:100%;
+    float:left;
+    padding-top:10px;
+}
+
+.order-actions {
+    float:right;
+}
+
+.orderstatus {
+    float:left;
+}
+
+.payment-action, .order-status {
+    list-style:none;
+    float:left;
+
+}
+
+.request-text, .response-text {
+    width:100%;
+
+
+}
+
+.request-text textarea, .response-text textarea {
+   width:95%;
+    margin-top:10px;
+    height:60px;
+	font-family:'courier new' !IMPORTANT;
+}
+
+.paid, .completed {
+    margin-left:20px;
+    float:left;
+}
+
+.container-collapse {
+    text-align:center;
+    margin-top:20px;
+    padding-top:10px;
+}
+
+.header-max {
+    text-align:left;
+    padding:0px 0px 10px 10px;
+}
+
+.minimize-button {
+    cursor:pointer;
+}
+
+.message-trace h4 {
+    text-align:left;
+    margin:10px;
+}
+
+.additional-toppings {
+}
+
+#addition-form, #addNewOrderForm {
+    text-align:center;
+    margin-top:20px;
+}
+
+#floor1 {
+    height: 100px;
+    background: black; /* For browsers that do not support gradients */        
+    background: -webkit-linear-gradient(90deg, red, yellow); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, red, yellow); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, red, yellow); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, red, orange); /* Standard syntax (must be last) */
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.header2 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.container2 {
+    padding: 10px;
+}
+#floor1 {
+
+  left: 0;
+  top: 0;
+  width: 50%;
+  z-index: 1;
+  color: rgba(130, 130, 130, 0.5);
+  font-size: 50px;
+  text-align: center;
+  line-height: 100px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
